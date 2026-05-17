@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vitrine Digital de Livros</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Vitrine Digital de Livros</h1>
+   <main>
+
+      <article class="card-livro">
+         <img src="img/duna.jpg" alt="Capa de Duna">
+         <div class="sinopse">
+            <h3>Duna</h3>
+            <p>No planeta desértico de Arrakis, o jovem Paul Atreides é lançado em uma teia de traições políticas e misticismo religioso para controlar a "especiaria", a substância mais valiosa e cobiçada do universo.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/messias-de-duna.jpg" alt="Capa de Messias de Duna">
+         <div class="sinopse">
+            <h3>Messsias de Duna</h3>
+            <p>Doze anos após assumir o trono como imperador e messias, Paul Atreides enfrenta conspirações políticas e o peso de suas próprias visões proféticas enquanto tenta guiar a humanidade em meio ao fanatismo religioso.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/neuromancer.jpg" alt="Capa de Neuromancer">
+         <div class="sinopse">
+            <h3>Neuromancer</h3>
+            <p>Case é um ex-hacker de elite banido do ciberespaço que recebe uma última chance de cura.</p> 
+            <p>Em troca, ele precisa realizar uma missão suicida: invadir uma das inteligências artificiais mais poderosas do mundo.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/o-fim-da-infancia.jpg" alt="Capa de O Fim da Infância">
+         <div class="sinopse">
+            <h3>O Fim da Infância</h3>
+            <p>A humanidade é surpreendida pela chegada pacífica de naves alienígenas gigantes.</p> 
+            <p>Os Senhores Supremos trazem uma era de paz e prosperidade utópicas, mas o preço dessa evolução pode ser o fim da própria identidade humana.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/game-of-thrones.jpg" alt="Capa de Game of Thrones">
+         <div class="sinopse">
+            <h3>Game of Thrones</h3>
+            <p>No continente de Westeros, onde os verões duram décadas e os invernos uma vida inteira, a morte do conselheiro do rei desencadeia uma sangrenta e implacável disputa pelo Trono de Ferro entre as grandes famílias nobres.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/nevernight.jpg" alt="Capa de Nevernight">
+         <div class="sinopse">
+            <h3>Nevernight</h3>
+            <p>Mia Corvere sobreviveu à destruição de sua família e busca vingança.</p>
+            <p>Para conseguir seus objetivos, ela ingressa na Igreja da Noite, uma academia secreta de assassinos onde falhar nas provações significa a morte.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/harry-potter.jpg" alt="Capa de Harry Potter e a Pedra Filosofal">
+         <div class="sinopse">
+            <h3>Harry Potter e a Pedra Filosofal</h3>
+            <p>Um garoto órfão que vive infeliz com os tios descobre, aos 11 anos, que é um bruxo e é convidado a estudar na Escola de Magia de Hogwarts, onde encontra amigos, mistérios e verdades sobre o seu passado.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/dom-quixote.jpg" alt="Capa de Dom Quixote de La Mancha">
+         <div class="sinopse">
+            <h3>Dom Quixote de La Mancha</h3>
+            <p>Enlouquecido pela leitura de romances de cavalaria, o fidalgo Alonso Quixano adota o nome de Dom Quixote e parte pelo mundo para combater injustiças imaginárias ao lado de seu fiel e realista escudeiro, Sancho Pança.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/o-alquimista.jpg" alt="Capa de O Alquimista">
+         <div class="sinopse">
+            <h3>O Alquimista</h3>
+            <p>A jornada mística e inspiradora do jovem pastor Santiago em busca de seu tesouro pessoal pelas areias do deserto do Egito, uma saga que ensina sobre a importância de ouvir o próprio coração e decifrar os sinais da vida.</p>
+         </div>
+      </article>
+
+      <article class="card-livro">
+         <img src="img/escravidao.jpg" alt="Capa de Escravidão - Volume I">
+         <div class="sinopse">
+            <h3>Escravidão - Volume I</h3>
+            <p>Uma profunda e impactante obra de pesquisa histórica que reconstrói os primeiros anos do comércio de cativos africanos, cobrindo o período que vai do primeiro leilão de escravos em Portugal até a morte de Zumbi dos Palmares.</p>
+         </div>
+      </article>
+
+   </main>
+
+   <script>
+      const cards = document.querySelectorAll('.card-livro');
+      cards.forEach(card => {
+         card.addEventListener('click', () => {
+            card.classList.toggle('ativo');
+         });
+      });
+   </script>
+</body>
+
+</html>
